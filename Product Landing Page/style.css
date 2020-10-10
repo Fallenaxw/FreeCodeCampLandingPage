@@ -1,0 +1,177 @@
+/******* Reset *******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******* Utility *******/
+body {
+  color: #333;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+
+/******* Header *******/
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+#header-img {
+  width: 250px;
+  height: 100px;
+}
+
+#nav-bar {
+  display: flex;
+}
+
+#nav-bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-bar ul li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.nav-link a:hover {
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/******* Main Area*******/
+main {
+height: 90vh;
+padding-top: 200px;
+background: url(/img/pexels-luis-quintero-2294881.jpg) no-repeat center/cover;
+justify-content: center;
+align-items: center;
+color: #eee;
+}
+
+#video-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  margin-bottom: 20px;
+}
+
+/******* Feature Section*******/
+#features {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #333;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.feature-item i, .feature-item h3 {
+  margin: .5rem;
+}
+
+.fas {
+  color: purple;
+}
+
+/******* Email *******/
+#email-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input[type=email] {
+  border-radius: 10px;
+  padding: 10px;
+  background: #eee;
+}
+
+#submit{
+ margin: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/******* Pricing *******/
+#pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-item {
+  margin: 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/******* Footer *******/
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: #eee;
+  color: #333;
+}
+
+/******* Media Queries*******/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
